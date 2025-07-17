@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://babyitachi.github.io/sitemap.xml
+Sitemap: https://babyitachi.github.io/abhishrut-website/sitemap.xml
