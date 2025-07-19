@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: "I came, I saw, I conquered!" - Julius Caesar 
 
 profile:
   align: right

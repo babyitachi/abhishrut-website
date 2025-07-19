@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: MS(R)
-      institution: Indian Institute of Technology Delhi, New Delhi, India 
+      institution: Indian Institute of Technology Delhi, New Delhi, India
       year: 2023
       description:
         - Thesis titled 'KERNEL-AUGMENTED NEURAL NETWORKS NOVEL APPROACHES TO RECOMMENDER SYSTEMS'
@@ -41,19 +41,17 @@
       #   - title: Description 3.
       #     contents:
       #       - Sub-description 1.
-            # - Sub-description 2.
+      # - Sub-description 2.
     - title: Senior Full-Stack Developer
       organization: Peepultree, Bengaluru, India
       year: 2023 - 2025
       # description:
-        # - Description 1.
-        # - Description 2.
+      # - Description 1.
+      # - Description 2.
 
     - title: Software Engineer - Development
       organization: Citiustech, Mumbai, India
       year: 2018-2020
-
-
 # - title: Open Source Projects
 #   type: time_table
 #   contents:
