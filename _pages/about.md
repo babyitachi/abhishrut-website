@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "I came, I saw, I conquered!" - Julius Caesar 
+# subtitle: 'I came, I saw, I conquered!' Julius Caesar 
 
 profile:
   align: right
