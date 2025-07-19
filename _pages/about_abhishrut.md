@@ -1,32 +1,3 @@
----
-layout: about
-title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>HSR Layout</p>
-    <p>Bengaluru</p>
-    <p>Karnataka 560068</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
----
-
 I am a results-driven software engineer with over five years of experience architecting and developing scalable web applications and high-traffic e-commerce platforms. My career is centered on leveraging a deep technical expertise in AI, machine learning, and full-stack development to build impactful, user-centered products.
 
 My professional journey began at CitiusTech, where I developed a Patient Access System web app for Revenue Cycle Management, building modular and responsive user interfaces with Angular, TypeScript, and Material UI, supported by a robust backend using C# and .NET Core. This foundational experience in healthcare technology set the stage for my future roles. As a founding member at the startup AiNS PeopleTech, I took on the challenge of building a customer-facing mobile application from the ground up using Flutter and Dart. In this role, I designed and implemented recommendation algorithms that significantly increased user retention rates and built a scalable backend infrastructure using AWS Amplify and Git. Most recently, I served as a Senior Full Stack Developer at Peepul Tree, where I designed and deployed an end-to-end e-commerce platform capable of handling over 100,000 daily visitors. My work included creating an operations and analytics dashboard for real-time visibility into orders and user activity. By enhancing the shopping experience and checkout flow, I contributed to a fivefold boost in conversion rates. I also played a key role in optimizing backend systems with AWS for ultra-low latency and spearheaded the implementation of CI/CD pipelines for seamless deployments, while mentoring junior engineers in software best practices.
