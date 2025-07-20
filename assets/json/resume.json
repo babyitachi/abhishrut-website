@@ -24,7 +24,7 @@
   },
   "work": [
     {
-      "name": "Intel, Bengaluru, India",
+      "name": "Intel, Bengaluru",
       "position": "Software Research Engineer/Scientist",
       "url": "https://www.intel.com/",
       "startDate": "2025-02-01",
@@ -32,7 +32,7 @@
       "highlights": ["Research"]
     },
     {
-      "name": "Peepultree, Bengaluru, India",
+      "name": "Peepultree, Bengaluru",
       "position": "Senior Full-Stack Developer",
       "url": "http://peepultree.world/",
       "startDate": "2023-06-01",
@@ -40,7 +40,7 @@
       "highlights": ["Analytics"]
     },
     {
-      "name": "Citiustech, Mumbai, India",
+      "name": "Citiustech, Mumbai",
       "position": "Software Engineer - Development",
       "url": "https://www.citiustech.com/",
       "startDate": "2020-08-01",
@@ -51,7 +51,7 @@
   "education": [
     {
       "institution": "Indian Institute of Technology Delhi",
-      "location": "New Delhi, India",
+      "location": "New Delhi",
       "url": "https://home.iitd.ac.in/",
       "area": "Deep Learning, Information Retreival, Recommender Systems",
       "studyType": "MS(R)",
@@ -62,7 +62,7 @@
     },
     {
       "institution": "Veermata Jijabai Technological Institute",
-      "location": "Mumbai, Maharashtra, India",
+      "location": "Mumbai, Maharashtra",
       "url": "https://vjti.ac.in/",
       "area": "Electronics and Telecommunications Engineering",
       "studyType": "B.Tech",
