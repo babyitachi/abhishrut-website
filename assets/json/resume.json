@@ -43,8 +43,8 @@
       "name": "Citiustech, Mumbai",
       "position": "Software Engineer - Development",
       "url": "https://www.citiustech.com/",
-      "startDate": "2020-08-01",
-      "endDate": "2018-06-01",
+      "startDate": "2018-06-01",
+      "endDate": "2020-08-01",
       "highlights": ["Full Stack"]
     }
   ],
@@ -152,7 +152,7 @@
     {
       "name": "Professor Niladri Chatterjee",
       "icon": "fa-solid fa-laptop",
-      "reference": "IIT Delhi MS(R) Direct Subpervisor"
+      "reference": "IIT Delhi MS(R) Direct Supervisor"
     }
   ],
   "projects": [

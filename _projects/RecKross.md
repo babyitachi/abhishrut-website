@@ -2,7 +2,7 @@
 layout: page
 title: RecKross
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/recKross.png
 importance: 1
 category: work
 related_publications: true
