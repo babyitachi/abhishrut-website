@@ -8,74 +8,61 @@ category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# RecKross: A Novel Recommender System with k-Cross Kernel Net
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**Authors:** Abhishrut Vaidya, Niladri Chatterjee[1]
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Summary
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This paper introduces **RecKross**, a novel collaborative filtering model designed for personalized recommendations, particularly in data-constrained environments[1]. It conceptualizes the recommendation task as a matrix completion problem, proposing a new architecture that combines a **2D Kernel layer** for multi-dimensional feature extraction and a **k-Cross Kernel layer** to improve collaborative filtering[1]. The model achieves state-of-the-art (SOTA) performance on benchmark datasets like MovieLens and Douban, demonstrating significant improvements in training speed and effectiveness in handling the **cold start problem** without needing any extra side information[1].
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Key Innovations
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### 2D Kernel Layer
+An extension of standard kernelized networks, this layer adds an extra dimension to capture more complex, non-linear relationships and multi-dimensional latent features from the user-item interaction matrix[1]. It uses reparameterization (the "kernel trick") to sparsify network weights, which reduces the model's complexity and improves training efficiency[1].
 
-{% endraw %}
+### k-Cross Kernel Layer
+This layer is specifically designed to enhance collaborative filtering by identifying similarities between users and items. It uses two distinct kernels—a **horizontal kernel** and a **vertical kernel**—that are convoluted across the user-item matrix[1].
+- The **horizontal kernel** captures item correlations among different users.
+- The **vertical kernel** captures user correlations across different items[1].
+
+---
+
+## How It Works: Model Architecture
+
+RecKross employs an AutoEncoder-like structure that processes a user-item rating matrix. The optimal configuration found during experiments is a three-layer network[1]:
+1.  **Input Layer:** A **2D Kernel layer** processes the initial user-item interaction matrix.
+2.  **Hidden Layer:** A **k-Cross Kernel layer** performs the core collaborative filtering task and captures neighbor information efficiently.
+3.  **Output Layer:** A final **2D Kernel layer** reconstructs the rating matrix, predicting the missing values[1].
+
+---
+
+## Key Advantages
+
+-   **Superior Performance:** Outperforms previous state-of-the-art models on the ML-1M and ML-100K datasets in terms of Root Mean Squared Error (RMSE)[1].
+-   **High Efficiency:** Trains significantly faster than competing models like GLocal-K. For instance, on the ML-1M dataset, RecKross took approximately 3,032 seconds to train, compared to GLocal-K's 7,880 seconds on the same hardware[1].
+-   **Cold Start Effectiveness:** Demonstrates better performance than strong baselines in highly sparse data settings, making it highly effective for new users and items with limited interaction data[1].
+-   **No Side Information Required:** Achieves top results using only the user-item interaction matrix, without needing additional data like user demographics or item attributes[1].
+
+---
+
+## Performance Highlights
+
+RecKross was evaluated against several baseline models on three datasets. It achieved the lowest RMSE (lower is better) on the MovieLens-1M dataset, indicating its superior prediction accuracy[1].
+
+| Model | ML-1M RMSE ↓ |
+| :--- | :--- |
+| I-AutoRec | 0.8310[1] |
+| GC-MC | 0.8320[1] |
+| SparseFC | 0.8240[1] |
+| IntentRec | 0.8230[1] |
+| GLocal-K | 0.8227[1] |
+| **RecKross** | **0.8224**[1] |
+
+The model also achieved the best performance on the ML-100K dataset with an RMSE of **0.8910** and was highly competitive on the Douban dataset[1].
+
