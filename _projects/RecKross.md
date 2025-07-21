@@ -4,7 +4,7 @@ title: RecKross
 description: with background image
 img: assets/img/recKross.png
 importance: 1
-category: work
+category: research
 related_publications: true
 ---
 

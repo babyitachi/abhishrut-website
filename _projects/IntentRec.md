@@ -4,7 +4,7 @@ title: IntentRec
 description: with background image
 img: assets/img/intentRec.png
 importance: 1
-category: work
+category: research
 related_publications: true
 ---
 
